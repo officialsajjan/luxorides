@@ -15,6 +15,8 @@ import Footer from "./Footer";
 import Header from "./components/Header";
 import Forgotpassword from "./pages/Forgotpassword";
 import Tearms from "./pages/Terms";
+import Agra from "./pages/Agra";
+import Jaipur from "./pages/Jaipur";
 
 
 function App() {
@@ -30,6 +32,8 @@ function App() {
       <Route path="/Services" element={<Services />}/>
       <Route path="/Signin" element={<Signin />}/>
       <Route path="/Signup" element={<Signup />}/>
+      <Route path="/Agra" element={<Agra />}/>
+      <Route path="/Jaipur" element={<Jaipur />}/>
       <Route path="/Forgotpassword" element={<Forgotpassword />}/>
       <Route path="/Brands" element={<Brands />}/>
       <Route path="/View" element={<View />}/>

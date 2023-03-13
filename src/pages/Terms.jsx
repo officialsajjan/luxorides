@@ -37,6 +37,9 @@ export default function Terms() {
 
         </div>
     </div>
+    <div className='w-full h-[300px]   bg-gradient-to-r from-[#232323] to-[#e2b295]'>
+
+    </div>
     </>
   )
 }

@@ -63,8 +63,13 @@ export default function Header() {
                     <div className='group-hover:block hidden  text-center  
                       bg-[#073b4c] w-[250px] h-[400px] absolute top-[30px] right-[px] text-[#b1a374!important]'>
                         <li className='mt-12 hover:text-[#e6c65f]'>NCR</li>
-                        <li className='mt-6 hover:text-[#e6c65f]'>jaipur</li>
-                        <li className='mt-6 hover:text-[#e6c65f]'>Agra</li>
+                        <li className={`mt-6 hover:text-[#e6c65f]  ${show('/Jaipur') && ' border-b-red-600'}`}
+                        onClick={ ()=>navigate('/Jaipur')}
+                        >jaipur</li>
+                        <li className={`mt-6 hover:text-[#e6c65f] ${show('/Agra') && ' border-b-red-600'}`}
+                        onClick={ ()=>navigate('/Agra')}
+                        >
+                          Agra</li>
                         <li className='mt-6 hover:text-[#e6c65f]'>Delhi</li>
                         <li className='mt-6 hover:text-[#e6c65f]'>Goa</li>
                       </div>
