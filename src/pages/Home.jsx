@@ -246,16 +246,17 @@ export default function Home() {
       </div>
     </div>
     <div className=''>
-      <div className='flex justify-center items-center'>
-        <img src='./ride.jpg'/>
-        <div>
-          
-        </div>
-        <li>RIDE<br></br><span >ELITE</span></li>
-        <li>Lorem ipsum dolor sit amet consectetur <br></br>
+      <div className='flex justify-center items-center  space-x-10 mt-10'>
+        <img src='./ride.jpg' className='w-[600px] h-[500px] mt-[80px]'/>
+        <div className='list-none '>
+        <li className='text-[60px] text-center'>RIDE<br></br><span className='font-semibold text-[70px]'>ELITE</span></li>
+        <li className='text-[26px] text-center'>Lorem ipsum dolor sit amet consectetur <br></br>
           adipisicing elit. Possimus beatae debitis, placeat,<br></br>
            distinctio ducimus dolorum facilis repellen<br></br>
           dolore voluptatibus unde! Odio, illo?</li>
+
+        </div>
+        
       </div>
 
     </div>
