@@ -14,6 +14,14 @@ export default function Home() {
       },
       {url:'./car9.jpg'},
     ]
+    const slide=[
+      {url:'covid-3.jpg'},
+     {url:'https://cdn.pixabay.com/photo/2014/06/04/16/36/man-362150__340.jpg'},
+      {
+        url:'https://cdn.pixabay.com/photo/2015/05/28/23/12/auto-788747__340.jpg'
+      },
+      {url:'./car9.jpg'},
+    ]
   const [Currentstate, setCurrentstate]=useState(0)
 
   const prevslide=() =>{
@@ -245,20 +253,58 @@ export default function Home() {
 
       </div>
     </div>
-    <div className=''>
-      <div className='flex justify-center items-center  space-x-10 mt-10'>
-        <img src='./ride.jpg' className='w-[600px] h-[500px] mt-[80px]'/>
+    <div className='bg-blue-200'>
+      <div className='flex justify-center items-center  space-x-[250px] mt-'>
+        <img src='./ride.jpg' className='w-[700px] h-[600px] mt-[80px] rounded-[10%]'/>
         <div className='list-none '>
         <li className='text-[60px] text-center'>RIDE<br></br><span className='font-semibold text-[70px]'>ELITE</span></li>
-        <li className='text-[26px] text-center'>Lorem ipsum dolor sit amet consectetur <br></br>
-          adipisicing elit. Possimus beatae debitis, placeat,<br></br>
-           distinctio ducimus dolorum facilis repellen<br></br>
-          dolore voluptatibus unde! Odio, illo?</li>
+        <li className='text-[26px] text-center mt-8'>Lorem ipsum dolor consectetur <br></br>
+          adipisicing elit. Possimus beatae ,<br></br>
+           distinctio ducimus repellen<br></br>
+            adipisicing elit. Possimus beatae ,<br></br>
+           distinctio ducimus repellen<br></br>
+          dolore voluptatibus  illo?</li>
 
         </div>
         
       </div>
+      <div>
+      <div className='text-center space-x-8 mt-[100px] mb-10'>
+        <button className='bg-[#b1a374] hover:bg-blue-400 w-[400px] h-16 rounded-full text-white text-[20px]'>Explore Cars by Brands </button>
+        <button className='bg-[#b1a374]  hover:bg-blue-400 w-[400px] h-16 rounded-full text-white text-[20px]'>Explore Cars by Categories</button>
+       
 
+      </div>
+      <div className='text-center space-x-8  pb-10'>
+      <button className='bg-[#b1a374]  hover:bg-blue-400 w-[400px] h-16 rounded-full text-white text-[20px]'>Explore by service</button>
+        <button className='bg-[#b1a374]  hover:bg-blue-400 w-[400px] h-16 rounded-full text-white text-[20px]'>One-View</button>
+        <button className='bg-[#b1a374]  hover:bg-blue-400 w-[400px] h-16 rounded-full text-white text-[20px]'>Contact Us</button>
+      </div>
+      </div>
+
+    </div>
+    <div>
+      <div className='text-center text-[50px] list-none mt-16'>
+        <li>WHATS OUR CUSTOMERS SAY</li>
+      </div>
+
+
+    <div className='w-full h-[700px] relative '>
+      <div style={{backgroundImage: `url(${slide[Currentstate].url})  `}}
+       className='w-[100px] h-[100px] ml-[800px] mt-12   rounded-full bg-center bg-cover duration-500'></div>
+      
+
+    
+    <div className='absolute top-[20%] translate-x-0 translate-y-[-50%] left-5 rounded-full p-2 text-white bg-black cursor-pointer'>
+    <BsChevronLeft onClick={prevslide} size={30} />
+      
+    </div>
+    <div className='absolute top-[20%] translate-x-0 translate-y-[-0%] right-5 rounded-full p-2 text-white bg-black cursor-pointer'>
+      <BsChevronRight onClick={nextslide} size={30}/>
+      
+    </div>
+
+    </div>
     </div>
 
     

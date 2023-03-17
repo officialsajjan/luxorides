@@ -1,36 +1,30 @@
 import React from 'react'
 import {useLocation,useNavigate} from 'react-router-dom' 
 
-
-export default function Jaipur() {
-  
-const location= useLocation()
-const navigate=useNavigate()
-function show(route){
-  if(route==location.pathname){
-    return true
-  }
-}
- 
-
-
-
-
+export default function Delhi() {
+    const location= useLocation()
+    const navigate=useNavigate()
+    function show(route){
+      if(route==location.pathname){
+        return true
+      }
+    }
   return (
+    <>
     <div className=''>
        <div className='w-6xl flex relative '>
-      <img src='./jaipur.jpg'
+      <img src='./delhi.jpg'
        alt='bye bye' className='w-full h-[850px]'
       />
-      <div className='absolute text-white top-[200px] right-[200px] text-end '>
+      <div className='absolute text-gray-400 top-[200px] right-[200px] text-end '>
         <p className='space-x-6 text-[110px] transition duration-150 text-white'>Rent<br></br><span className='font-semibold'>Luxury Cars</span><br></br>
-        <span className='space-x-6 text-14'>for </span><span className='font-semibold'>Jaipur</span></p>
+        <span className='space-x-6 text-14'>for </span><span className='font-semibold'>Delhi</span></p>
       </div>
       
     </div> 
     <div className='w-full h-full bg-black-500 text-center border-6 text-[80px] mt-[100px] mb-[50px]'>
       <p className=''>Planing to Rent</p>
-      <p>a luxury Cars for <span className='font-semibold'>Jaipur ?</span></p>
+      <p>a luxury Cars for <span className='font-semibold'>Delhi ?</span></p>
       <p className='text-[50px] ml-[40%] italic'>We will help</p>
       <div className=' space-x-4'>
         <button className={` text-[25px] p-6 rounded-full border-2 border-black hover:bg-black hover:text-white w-[300px] 
@@ -48,7 +42,7 @@ function show(route){
 
       </div>  
       <div className='mt-[300px] m-auto'>
-      <p>Renting a luxury Cars in <span className='font-semibold'>Jaipur ?</span></p>
+      <p>Renting a luxury Cars in <span className='font-semibold'>Delhi ?</span></p>
       <p className='italic text-[25px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro 
                          <br></br>maxime voluptatum autem exercitationem repudiandae nostrum sed ali 
                          <br></br>blanditiis at? Hic quam iste eos quia, expedita officia incidunt vero non?
@@ -59,7 +53,7 @@ function show(route){
                           <button className='text-green-500'>Bentley</button>,<button className='text-green-500'>porsche</button>,
                           <button className='text-green-500'>Rolls Royace </button>,<br></br>
                           <button className='text-green-500'>Ferrari </button>and,
-                          <button className='text-green-500'>Vinatge Cars </button>, on rent in agra
+                          <button className='text-green-500'>Vinatge Cars </button>, on rent in Lucknow
         </p>
         
       </div>  
@@ -139,6 +133,7 @@ function show(route){
     </div>
     
     </div>
-   
+    
+    </>
   )
 }

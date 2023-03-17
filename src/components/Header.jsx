@@ -70,8 +70,13 @@ export default function Header() {
                         onClick={ ()=>navigate('/Agra')}
                         >
                           Agra</li>
-                        <li className='mt-6 hover:text-[#e6c65f]'>Delhi</li>
-                        <li className='mt-6 hover:text-[#e6c65f]'>Goa</li>
+                        <li className={`mt-6 hover:text-[#e6c65f] ${show('/Delhi')}`}
+                        onClick={ ()=>navigate('/Delhi')}>
+                          Delhi</li>
+                        <li className={`mt-6 hover:text-[#e6c65f] ${show('/Lucknow')} `}
+                         onClick={ ()=>navigate('/Lucknow')}
+                        >Lucknow
+                        </li>
                       </div>
                     </li>
                     <li className={`text-[#b1a374] hover:text-[#e6c65f] cursor-pointer ${show('/') && ' border-b-red-600'}`}
@@ -85,10 +90,15 @@ export default function Header() {
                         <li className={`hover:text-[#e6c65f] mt-12 {show('/Terms') && 'text-black border-b-red-600'}`}
                           onClick={ ()=>navigate('/Terms')}>
                           Term & Conditions</li>
-                        <li className='hover:text-[#e6c65f] mt-6'>Employee Zone</li>
+                        <li className={`hover:text-[#e6c65f] mt-6 ${show('/Contact') }`}
+                        onClick={ ()=>navigate('/Contact')}
+                        >
+                          Contact Us</li>
                         <li className='mt-6 hover:text-[#e6c65f]'>Testimoniols</li>
-                        <li className='mt-6 hover:text-[#e6c65f]'>Catologues</li>
-                        <li className='mt-6 hover:text-[#e6c65f]'>About</li>
+                        
+                        <li className={`mt-6 hover:text-[#e6c65f] ${show('/About') }`}
+                        onClick={ ()=>navigate('/About')}
+                        >About</li>
                       </div>
                     </li>
                 </ul>

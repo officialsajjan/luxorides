@@ -17,6 +17,9 @@ import Forgotpassword from "./pages/Forgotpassword";
 import Tearms from "./pages/Terms";
 import Agra from "./pages/Agra";
 import Jaipur from "./pages/Jaipur";
+import Lucknow from "./pages/Lucknow";
+import Delhi from "./pages/Delhi";
+import Contact from "./pages/Contact";
 
 
 function App() {
@@ -33,14 +36,16 @@ function App() {
       <Route path="/Signin" element={<Signin />}/>
       <Route path="/Signup" element={<Signup />}/>
       <Route path="/Agra" element={<Agra />}/>
+      <Route path="/Delhi" element={<Delhi />}/>
       <Route path="/Jaipur" element={<Jaipur />}/>
+      <Route path="/Lucknow" element={<Lucknow />}/>
       <Route path="/Forgotpassword" element={<Forgotpassword />}/>
       <Route path="/Brands" element={<Brands />}/>
       <Route path="/View" element={<View />}/>
       <Route path="/About" element={<About />}/>
       <Route path="/Locations" element={<Locations />}/>
       <Route path="/Support" element={<Support />}/>
-      <Route path="/More" element={<More />}/>
+      <Route path="/Contact" element={<Contact />}/>
       <Route path="/Terms" element={<Tearms />}/>
       
       </Routes>
