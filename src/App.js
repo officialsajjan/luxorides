@@ -20,6 +20,7 @@ import Jaipur from "./pages/Jaipur";
 import Lucknow from "./pages/Lucknow";
 import Delhi from "./pages/Delhi";
 import Contact from "./pages/Contact";
+import Wedding from "./pages/Wedding";
 
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
       <Route path="/Support" element={<Support />}/>
       <Route path="/Contact" element={<Contact />}/>
       <Route path="/Terms" element={<Tearms />}/>
+      <Route path="/Wedding" element={<Wedding />}/>
       
       </Routes>
 

@@ -1,9 +1,21 @@
+import { queryByAltText } from '@testing-library/react'
 import React, { useState } from 'react'
 import {BsChevronLeft,BsChevronRight} from 'react-icons/bs'
+import { Navigate } from 'react-router'
+import {useLocation,useNavigate} from 'react-router-dom'
 
 
 
 export default function Home() {
+
+  
+  const location= useLocation()
+  const navigate=useNavigate()
+  function show(route){
+    if(route==location.pathname){
+      return true
+    }
+  }
 
   
     const slides=[
@@ -34,6 +46,7 @@ export default function Home() {
     const newindex= isfirstdlide ? 0: Currentstate+1;
     setCurrentstate(newindex); 
    };
+
  
     
   return (
@@ -41,9 +54,10 @@ export default function Home() {
     <div className='w-full h-[700px] relative'>
       <div style={{backgroundImage: `url(${slides[Currentstate].url})`}}
        className='w-full h-full bg-center bg-cover duration-500'></div>
-      
 
+  
     </div>
+    
     <div className='absolute top-[50%] translate-x-0 translate-y-[-50%] left-5 rounded-full p-2 text-white bg-black cursor-pointer'>
     <BsChevronLeft onClick={prevslide} size={30} />
       
@@ -124,9 +138,14 @@ export default function Home() {
 
       </div>
       <div className='flex  justify-center items-center space-x-8 mt-10 '>
-        <div className='bg-blue-100 text-center list-none rounded-[7%]'>
+        <div className={`cursor-pointer bg-blue-100 text-center list-none rounded-[7%]  ${show('/Wedding') && ' border-b-red-600'}`}
+        onClick={ ()=>navigate('/Wedding')}
+       >
           <img src='./wedding.jpg' className='w-[350px] h-[320px] p-4 rounded-[17%]'/>
-          <li className='text-[22px] mt-4 pb-12'>Cars for <span className='font-semibold'>Wedding</span></li>
+          <li className='text-[22px] mt-4 pb-12'>Cars for <span className={` font-semibold ${show('/Wedding') && ' border-b-red-600'}`}
+         
+          >
+            Wedding</span></li>
         </div>
         <div  className='bg-blue-100 text-center list-none rounded-[7%]'>
           <img src='./corpurate.jpg'  className='w-[350px] h-[320px] p-4 ]  rounded-[17%]'/>
@@ -290,16 +309,16 @@ export default function Home() {
 
 
     <div className='w-full h-[700px] relative '>
-      <div style={{backgroundImage: `url(${slide[Currentstate].url})  `}}
-       className='w-[100px] h-[100px] ml-[800px] mt-12   rounded-full bg-center bg-cover duration-500'></div>
+      <div style={{backgroundImage: `url(${slide[Currentstate].url}) `}}
+       className='w-[400px] h-[400px] ml-[800px] mt-12   rounded-full bg-center bg-cover duration-500' ></div>
       
 
     
-    <div className='absolute top-[20%] translate-x-0 translate-y-[-50%] left-5 rounded-full p-2 text-white bg-black cursor-pointer'>
+    <div className='absolute top-[30%] translate-x-0 translate-y-[-50%] left-5 rounded-full p-2 text-white bg-black cursor-pointer'>
     <BsChevronLeft onClick={prevslide} size={30} />
       
     </div>
-    <div className='absolute top-[20%] translate-x-0 translate-y-[-0%] right-5 rounded-full p-2 text-white bg-black cursor-pointer'>
+    <div className='absolute top-[30%] translate-x-0 translate-y-[-0%] right-5 rounded-full p-2 text-white bg-black cursor-pointer'>
       <BsChevronRight onClick={nextslide} size={30}/>
       
     </div>
