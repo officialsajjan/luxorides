@@ -14,7 +14,7 @@ export default function Footer() {
      <div className=' bg-[#073b4c]'>
 
     <div className=''>
-   <div className=' flex justify-center space-x-[150px] text-center'>
+   <div className='flex-wrap flex justify-center space-x-[150px] text-center'>
         <div className='mt-10 text-[20px] text-white'>
             <h1 className='text-[#b1a374!important] font-semibold'>Dive in</h1>
             <p className='mt-8'>Safety</p>
@@ -105,7 +105,7 @@ export default function Footer() {
 </div>
 </div>
 <div className='bg-black'>
- <div className='w-full flex justify-between items-center px-[80px] text-[#879a9f!important;] py-16 '>
+ <div className='w-full flex-wrap flex justify-between items-center px-[80px] text-[#879a9f!important;] py-16 '>
         <img src='https://luxorides.com/assets/images/luxorides-square-logo-only-solid-whitepng-400ppi-13-500x500.webp'/>
         <div className='text-center'>
             <p className='text-[30px]'>Locations</p>
@@ -130,14 +130,14 @@ export default function Footer() {
     
   </div>
   <div className='bg-white w-[70%] h-1 m-auto flex'></div>
-  <div className='flex justify-center space-x-[500px] mt-4 py-16'>
+  <div className='flex-wrap flex justify-center space-x-[400px] mt-4 py-16'>
    <div className='text-white'>
-          <p className='text-[20px]'>Webside Developed By  <span className='text-[#879a9f!important;]'>Coding Scoller Company</span> </p>
+          <p className='text-[20px]'>Webside Developed By  <span className='text-[#879a9f!important;]'>Coding Scholler Company</span> </p>
           <p className='text-[20px]'>A unit of <span className='text-[#b1a374!important]'> Lorem ipsum dolor sit amet.</span>formal stardust ventures</p>
           <p className='text-[22px]'>Copyright 2023-All Right Reserved</p>
    
         </div>
-        <div className=' flex justify-center space-x-6 mt-10 text-[#fff]'>
+        <div className='xm:hidden flex justify-center space-x-6 mt-10 text-[#fff]'>
                 <BsFacebook className='font-semibold text-[30px] text-gray-400 hover:text-white cursor-pointer'></BsFacebook>
                 <AiFillTwitterCircle className='font-semibold text-[30px] text-gray-400 hover:text-white cursor-pointer'></AiFillTwitterCircle>
                 <AiOutlineInstagram className='font-semibold text-[30px] text-gray-400 hover:text-white cursor-pointer'></AiOutlineInstagram>

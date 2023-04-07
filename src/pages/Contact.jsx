@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Contact() {
   return (
@@ -8,23 +9,26 @@ export default function Contact() {
         <h1 className='text-[70px] mt-[150px] font-semibold'>Contact Us</h1>
         <h2 className='text-[50px] mt-10'>Need Suggestions, or Assistance Help </h2>
         <li className='text-[30px] mt-12 text-[#c1c1c1]'>Lorem ipsum<br></br>
-        dolor sit amet consectetur adipisicing elit. Vero, ratione.</li>
+           dolor sit amet consectetur adipisicing elit. Vero, ratione.</li>
         <div className=''>
         <div className='text-center space-x-8  pb-10 mt-16'>
             <button className='bg-[#333]  hover:bg-black w-[400px] h-16 rounded-full text-white text-[20px]'>Schedule an Appointment</button>
-            <button className='bg-[]  hover:bg-black w-[400px] h-16 rounded-full hover:text-white text-black border-4 border-black text-[20px]'>Fill out Contact Form</button>
+            <Link to='#ss'>
+            <button  className='bg-[]  hover:bg-black w-[400px] h-16 rounded-full hover:text-white text-black border-4 border-black text-[20px]'>Fill out Contact Form</button>
+            </Link>
+            <button  className='bg-[]  hover:bg-black w-[400px] h-16 rounded-full hover:text-white text-black border-4 border-black text-[20px]'>Fill out Contact Form</button>
             <button className='bg-[#333]  hover:bg-black w-[400px] h-16 rounded-full text-white text-[20px]'>Contact info</button>
         </div>
         </div>
 
     </div>
     <div className=''>
-    <div className='text-center mt-[100px]'>
+    <div id='ss' className='text-center mt-[100px]'>
         <h1 className='text-[60px]'>Contact Form</h1>
         <div className='flex justify-center space-x-14 text-start list-none mt-10'>
             <div>
-                <li className='text-[25px]'>Name</li>
-                <input placeholder='' className='border-2 text-[30px]'></input>
+                <li className='text-[25px]' >Name</li>
+                <input placeholder=''  className='border-2 text-[30px]'></input>
             </div>
             <div>
                 <li  className='text-[25px]'>E-Mail</li>
