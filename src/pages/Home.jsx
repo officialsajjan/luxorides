@@ -73,7 +73,7 @@ export default function Home() {
       <div className=' mt-[200px] text-center'>
        <li className='text-[70px] list-none'><span className='font-semibold text-[80px]'>Luxury</span> Cars for rent</li>
        <li className='text-[70px] list-none '>Luxury is <span className='font-semibold text-[60px] '>  Contagious!</span> Choose<span className='font-semibold text-[60px]'>Wisely</span></li>
-      <div className='space-x-10 mt-10 h-20 md:space-y-6 md:mb-12 sm:space-y-6 xm:space-y-2 sm:mb-12 xm:mb-8 lg:mb-1'>
+      <div className='space-x-1 mt-10 h-20 md:space-y-6 md:mb-12 sm:space-y-2 xm:space-y-2 sm:mb-12 xm:mb-8 lg:mb-1'>
         <button className={`border-[1px] border-black w-[400px] p-4 text-[22px] rounded-full bg-[#b1a374] text-white font-semibold hover:bg-[#e6c65f] ${show('/Categories') }`}
          onClick={ ()=>navigate('/Categories')}>
           Explore cars by Category</button>
@@ -94,7 +94,7 @@ export default function Home() {
            elit. Esse, ratione! Fugit nobis laudantium, nisi assumenda aspernatur<br></br>
            repellendus <span className='text-green-600'>cupiditate impedit non praesentium.</span> </li>
       </div>
-      <div className='flex-wrap flex justify-center space-x-12 md:text-center'>
+      <div className='flex-wrap flex justify-center space-x-12 xm:space-y-2 xm:space-x-2 lg:space-x-12 md:text-center'>
         <div className='bg-[#ccf5f4] pb-4  rounded-[7%]'>
           <div className='p-4'>
             <img src='./covid-1.webp' className='w-[400px] h-[250px] rounded-[7%]' />
@@ -145,7 +145,7 @@ export default function Home() {
         elit. Inventore voluptates aliquam quasi</li>
 
       </div>
-      <div className='flex-wrap flex  justify-center items-center space-x-8 mt-8 xm:space-y-8 md:space-y-10 sm:space-y-10'>
+      <div className='flex-wrap flex  justify-center items-center space-x-8 xm:space-x-0 xm:space-y-2 lg:space-x-8  mt-8 '>
         <div className={`cursor-pointer bg-blue-100 text-center list-none rounded-[7%]  ${show('/Wedding') }`}
         onClick={ ()=>navigate('/Wedding')}
        >
@@ -204,7 +204,7 @@ export default function Home() {
         <h1 className='text-[80px]'>How Choose Us</h1>
         <li className=' text-[27px]'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, ipsam!</li>
       </div>
-      <div className='flex-wrap flex justify-center space-x-[200px] mt-10 list-none pb-[70px]'>
+      <div className='flex-wrap flex justify-center space-x-[200px] lg:space-x-[200px] xm:space-x-[2px] xm:space-y-2 mt-10 list-none pb-[70px]'>
         <div className=''>
           <h1 className='text-center  text-[80px] text-[#c1c1c1]'>01,</h1>
           <li className='text-center  text-[27px]'>Lorem ipsum dolor  <span className='font-semibold'>sit amet</span><br></br>
@@ -231,7 +231,7 @@ export default function Home() {
        <p className='mt-10 text-[30px] text-gray-500'>Lorem ipsum dolor sit amet.</p>
        <p className=' text-[30px]  text-gray-500'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, minus?</p>
        <p className='text-[30px]  text-gray-500'>Lorem ipsum dolor sit amet <span className='text-green-400'>consectetur </span>adipisicing elit.</p>
-    <div className='flex justify-center mt-[50px] w-full space-x-4 md:items-center'>
+    <div className='flex justify-center mt-[50px] w-full space-x-4  md:items-center'>
         <div className='border-4 w-[100px] h-[100px] rounded-[50%] border-black text-[50px] text-center'>
           1
       
@@ -248,8 +248,8 @@ export default function Home() {
         <div className='border-4 border-black rounded-[50%] text-[50px] w-[100px] h-[100px] text-[20px] text-center p-[5px]'>3</div>
 
       </div>
-      <div className='flex-wrap flex justify-between  px-[140px] mt-[30px] '>
-      <div className=' md:text-center xm:ml-[100px]'>
+      <div className='flex-wrap flex justify-center  px-[140px] mt-[30px] space-x-16 xm:space-x-0 md:space-x-6 lg:space-x-16'>
+      <div className=' md:text-center xm:ml-[100p] '>
         <h1 className='text-[40px]'>Choose your Ride</h1>
         <p className='text-[20px]'>Lorem ipsum dolor sit amet.</p>
        
@@ -300,7 +300,7 @@ export default function Home() {
         
       </div>
       <div>
-      <div className='text-center lg:space-x-8 xm:space-x-8  mt-[100px] mb-10 xm:space-y-4'>
+      <div className='text-center lg:space-x-8 xm:space-x-0  mt-[100px] mb-10 xm:space-y-4'>
         <button className={`bg-[#b1a374] hover:bg-blue-400 w-[400px] h-16 rounded-full text-white text-[20px] ${show('/Brands') }`}
                          onClick={ ()=>navigate('/Brands')}
         >Explore Cars by Brands </button>
@@ -310,7 +310,7 @@ export default function Home() {
        
 
       </div>
-      <div className='text-center space-x-8  pb-10 xm:space-y-4'>
+      <div className='text-center space-x-8 xm:space-x-0 lg:space-x-8 pb-10 xm:space-y-4'>
       <button className={`bg-[#b1a374]  hover:bg-blue-400 w-[400px] h-16 rounded-full text-white text-[20px]  ${show('/Services')}`}
       onClick={ ()=>navigate('/Services')}
       >Explore by service</button>
@@ -324,23 +324,23 @@ export default function Home() {
       </div>
 
     </div>
-    <div>
+    <div className='xm:w-[100%]'>
       <div className='text-center text-[50px] list-none mt-16'>
         <li>WHATS OUR CUSTOMERS SAY</li>
       </div>
 
 
-    <div className='mr-[100px] relative m-auto'>
+    <div className='mr-[50px] relative m-auto'>
       <div style={{backgroundImage: `url(${slide[Currentstate].url}) `}}
        className='xm:ml-[10%] sm:ml-[10%] md:ml-[30%] lg:ml-[300px] xm:w-[%] xl:ml-[400px] 2xl:ml-[700px] lg:h-[400px] w-[400px] h-[400px] ml-[300px] mt-12 items-center  rounded-full bg-center bg-cover duration-500 ]' > <h1>{slide[Currentstate]?.title}</h1></div>
       
 
     
-    <div className='absolute top-[30%] translate-x-0 translate-y-[-50%] left-5 rounded-full p-2 text-white bg-black cursor-pointer'>
+    <div className='xm:ml-[15%] absolute top-[30%] translate-x-0 translate-y-[-50%] left-5 rounded-full p-2 text-white bg-black cursor-pointer'>
     <BsChevronLeft onClick={prevslide} size={30} />
       
     </div>
-    <div className='absolute top-[30%] translate-x-0 translate-y-[-0%] right-5 rounded-full p-2 text-white bg-black cursor-pointer'>
+    <div className='xm:ml-[40%] absolute top-[30%] translate-x-0 translate-y-[%] right-5 rounded-full p-2 text-white bg-black cursor-pointer'>
       <BsChevronRight onClick={nextslide} size={30}/>
       
     </div>
