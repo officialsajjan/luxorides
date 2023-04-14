@@ -126,14 +126,14 @@ export default function Header() {
                     </li>
                 </ul>
             </div>
-            <div className=' flex space-x-8 ml-[20px] lg:text-[12px] xl:text-[20px] xm:hidden lg:flex lg:w-[38%] xl:w-[30%] 2xl:w-[30%] 2xl:ml-[0px] lg:mr-[100px] xl:mr-[200px] w-[500px]'>
+            <div className=' flex space-x-8 ml-[20px] lg:text-[12px] xl:text-[20px] xm:hidden lg:flex lg:w-[39%] xl:w-[30%] 2xl:w-[30%] 2xl:ml-[0px] lg:mr-[100px] xl:mr-[200px] w-[500px]'>
               <div className='flex justify-center  rounded-full bg-white hover:bg-gray-200 border-2 w-[20%] h-[54px] font-semibold text-[20px] '>
               <li className={`cursor-pointer flex items-center  ${show('/Signin') && 'text-black border-b-red-600'}
                 `}
                 onClick={ ()=>navigate('/Signin')}>
                Singin</li>
               </div>
-               <div  className='  space-x-2 flex justify-center bg-green-400 hover:bg-green-600 rounded-full border-2 w-[30%] h-[54px] font-semibold text-[20px]'>
+               <div  className='  space-x-2 flex justify-center bg-green-400 hover:bg-green-600 rounded-full border-2 w-[32%] h-[54px] font-semibold lg:text-[18px] 2xl:text-[20px] '>
                <button className='flex items-center space-x-2 '>
                 <SiWhatsapp className='flex mr-2'/>
                 Whatsapp</button>
@@ -146,7 +146,7 @@ export default function Header() {
               
                
             </div>
-            <div className='mr-1 text-[62px] text-white lg:hidden sm:block  md:ml-[450px] xm:ml-[300px] font-semibold'>
+            <div className='mr-1 text-[62px] text-white lg:hidden sm:block  md:ml-[450px] xm:ml-[250px] font-semibold'>
               <IoMdMenu onClick={show()} className='' ></IoMdMenu>
             </div>
         </header>

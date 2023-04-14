@@ -64,80 +64,57 @@ export default function Home() {
     <BsChevronLeft onClick={prevslide} size={30} />
       
     </div>
-    <div className='absolute top-[50%] translate-x-0 translate-y-[-0%] right-5 rounded-full p-2 text-white bg-black cursor-pointer'>
+    <div className='absolute top-[47%] translate-x-0 translate-y-[-0%] right-5 rounded-full p-2 text-white bg-black cursor-pointer'>
       <BsChevronRight onClick={nextslide} size={30}/>
       
     </div>
     </div>
     <div className=' h-auto '>
-      <div className=' mt-[200px] text-center'>
-       <li className='text-[70px] list-none'><span className='font-semibold text-[80px]'>Luxury</span> Cars for rent</li>
-       <li className='text-[70px] list-none '>Luxury is <span className='font-semibold text-[60px] '>  Contagious!</span> Choose<span className='font-semibold text-[60px]'>Wisely</span></li>
-      <div className='space-x-1 mt-10 h-20 md:space-y-6 md:mb-12 sm:space-y-2 xm:space-y-2 sm:mb-12 xm:mb-8 lg:mb-1'>
-        <button className={`border-[1px] border-black w-[400px] p-4 text-[22px] rounded-full bg-[#b1a374] text-white font-semibold hover:bg-[#e6c65f] ${show('/Categories') }`}
+      <div className=' mt-[200px] text-center xm:text-[px] lg:text-[px]'>
+       <li className='text-[70px] list-none  xm:text-[50px] lg:text-[70px]'>Luxury is <span className='font-semibold text-[60px] '>  Contagious!</span> Choose<span className='font-semibold text-[60px]'>Wisely</span></li>
+      <div className=' space-x-1 mt-10 h-20 md:space-y-6 md:mb-12 sm:space-y-2 xm:space-y-2 sm:mb-12 xm:mb-8 lg:mb-1'>
+        <button className={`border-[1px] border-black xm:w-[300px] md:w-[400px] w-[400px] p-4 text-[22px] rounded-full bg-[#b1a374] text-white font-semibold hover:bg-[#e6c65f] ${show('/Categories') }`}
          onClick={ ()=>navigate('/Categories')}>
           Explore cars by Category</button>
-        <button className={`border-[1px] border-black w-[400px] p-4 text-[22px]  rounded-full bg-[#b1a374] text-white font-semibold hover:bg-[#e6c65f] ${show('/Brands') }`}
+        <button className={`border-[1px] border-black xm:w-[300px] md:w-[400px] w-[400px] p-4 text-[22px]  rounded-full bg-[#b1a374] text-white font-semibold hover:bg-[#e6c65f] ${show('/Brands') }`}
                  onClick={ ()=>navigate('/Brands')}
         >
           Explore cars by Brands</button>
       </div>
-      <button className=' mt-10 border-[1px] border-[#b1a374] w-[400px] p-4 text-[22px]  rounded-full text-[#b1a374] hover:text-white font-semibold hover:bg-[#b1a374]'> One View of the Fleet</button>
+      <button className=' mt-10 border-[1px] border-[#b1a374] xm:w-[300px] md:w-[400px] w-[400px] p-4 text-[22px]  rounded-full text-[#b1a374] hover:text-white font-semibold hover:bg-[#b1a374]'> One View of the Fleet</button>
 
       </div>
       
     </div>
-    <div className='bg-blue-200 py-10'>
-      <div className='text-center p-10 list-none'>
-        <li className='text-[50px] tracking-wider'>We`re  <span className='font-semibold'> COVID-19 ready</span></li>
-        <li className='text-[30px] mt-10 tracking-widest'>Lorem ipsum dolor sit amet consectetur adipisicing<br></br>
-           elit. Esse, ratione! Fugit nobis laudantium, nisi assumenda aspernatur<br></br>
-           repellendus <span className='text-green-600'>cupiditate impedit non praesentium.</span> </li>
-      </div>
-      <div className='flex-wrap flex justify-center space-x-12 xm:space-y-2 xm:space-x-2 lg:space-x-12 md:text-center'>
-        <div className='bg-[#ccf5f4] pb-4  rounded-[7%]'>
-          <div className='p-4'>
-            <img src='./covid-1.webp' className='w-[400px] h-[250px] rounded-[7%]' />
+    <div className='bg-[#ccf5f4] pb-24'>
+        <h2 className='text-5xl font-light text-center pt-24'>We're <span className='font-semibold'>Covid-19 Ready</span></h2>
+        <p className='text-2xl font-thin mt-10 text-center'>
+          In an attempt to serve you even better through this pandemic,<br/>
+          We are taking frequent precautionary actions to keep you <span className='font-semibold'>Safe and Sanitised</span>.<br/>
+          Luxorides is a Covid-19 ready car rental service in Delhi NCR.
+        </p>
+        <div className='lg:flex justify-center space-x-6 mt-24'>
+          <div className='text-center lg:shadow-2xl'>
+            <img src="https://www.luxorides.com/assets/images/luxorides-covid-precautions-9.webp"
+            alt='covid' className='m-auto w-[350px] cursor-pointer '/>
+            <h2 className='text-lg font-semibold mt-5 '>Regularly Cleaned and Sanitised</h2>
+            <p className='text-lg text-gray-600 mt-3 pb-8'>All our vehicles are regularly cleaned<br/> and sanitised for your safer and<br/> hygienic ride.</p>
           </div>
-          <div className=' mt- h-[200px] w-[400px] list-none bg-white p-4 m-auto  rounded-[7%]'>
-            <li className='text-center text-[25px] '>Regulary Clean and Sanitised</li>
-            <li className='text-center text-[20px] mt-8'>Lorem ipsum dolor sit amet, <br></br>
-              consectetur adipisicing  <br></br>
-              repellendus velit.</li>
+          <div className='text-center lg:shadow-2xl'>
+            <img src="https://www.luxorides.com/assets/images/luxorides-covid-precautions-10.webp"
+            alt='covid' className='m-auto w-[350px] cursor-pointer '/>
+            <h2 className='text-lg font-semibold mt-5'>Minimal / No Touch Policy</h2>
+            <p className='text-lg text-gray-600 mt-3 pb-8'>We follow a minimum / no touch<br/> policy to ensure that you are safe<br/> throughout your rental.</p>
           </div>
-
+          <div className='text-center lg:shadow-2xl'>
+            <img src="https://www.luxorides.com/assets/images/6vh99bihqa-1.webp"
+            alt='covid' className='m-auto w-[350px] cursor-pointer '/>
+            <h2 className='text-lg font-semibold mt-5'>Precautionary Tests</h2>
+            <p className='text-lg text-gray-600 mt-3 pb-8'>Our staff undergoes a regular<br/> precautionary thermal screening for<br/> better safety.</p>
+          </div>
         </div>
-        <div  className='bg-[#ccf5f4] pb-4  rounded-[7%]'>
-        <div className='p-4'>
-          <img src='./covid-2.jpg' className='w-[400px] h-[250px] rounded-[7%]'/>
-        </div>
-        <div  className=' mt- h-[200px] w-[400px] list-none bg-white p-4 m-auto  rounded-[7%]'>
-          <li className='text-center text-[25px] mt-'>Minimal/No Touch Policy</li>
-          <li className='text-center text-[20px] mt-8'>Lorem ipsum dolor sit amet, <br></br>
-              consectetur adipisicing  <br></br>
-              repellendus velit.</li>
         </div>
 
-        </div>
-        <div className='bg-[#ccf5f4] pb-4  rounded-[7%]'>
-          
-        <div className='p-4'>
-          <img src='./covid-3.jpg' className='w-[400px] h-[250px] rounded-[7%]'/>
-        </div>
-        <div className=' mt- h-[200px] w-[400px] list-none bg-white p-4 m-auto  rounded-[7%]'>
-          <li className='text-center text-[25px] '>Precautionary Tests</li>
-          <li className='text-center text-[20px] mt-8'>Lorem ipsum dolor sit amet, <br></br>
-              consectetur adipisicing  <br></br>
-              repellendus velit.</li>
-        </div>
-
-        </div>
-        
-        
-
-    
-     </div>
-    </div>
     <div>
       <div className='list-none text-center '>
       <h1 className='mt-12 text-[70px]'>What We Offer</h1>
@@ -145,50 +122,50 @@ export default function Home() {
         elit. Inventore voluptates aliquam quasi</li>
 
       </div>
-      <div className='flex-wrap flex  justify-center items-center space-x-8 xm:space-x-0 xm:space-y-2 lg:space-x-8  mt-8 '>
-        <div className={`cursor-pointer bg-blue-100 text-center list-none rounded-[7%]  ${show('/Wedding') }`}
+      <div className='xm:space-y-2 xm:w-[40%] lg:w-[100%] xm:ml-[5%] ps:ml-[10%]  pm:ml-[20%] sm:ml-[25%] md:ml-[30%] lg:ml-[0%]  lg:gap-4  lg:flex  lg:justify-center '>
+        <div className={`cursor-pointer bg-blue-100 text-center list-none rounded-[7%]  w-[350px]  ${show('/Wedding') }`}
         onClick={ ()=>navigate('/Wedding')}
        >
-          <img src='./wedding.jpg' className='w-[350px] h-[320px] p-4 rounded-[17%]'/>
+          <img src='./wedding.jpg' className='m-auto w-[350px] cursor-pointer  rounded-[17%] p-4'/>
           <li className='text-[22px] mt-4 pb-12'>Cars for <span className={` font-semibold ${show('/Wedding') }`}
          
           >
             Wedding</span></li>
         </div>
-        <div  className='bg-blue-100 text-center list-none rounded-[7%]'>
-          <img src='./corpurate.jpg'  className='w-[350px] h-[320px] p-4 ]  rounded-[17%]'/>
+        <div  className='bg-blue-100 text-center list-none rounded-[7%] w-[350px] '>
+          <img src='./corpurate.jpg'  className='w-[350px]  m-auto p-4  rounded-[17%]'/>
           <li className='text-[22px] mt-4 pb-12'>Cars for <span className='font-semibold'>corpurate</span></li>
         </div>
-        <div  className={`bg-blue-100 text-center list-none rounded-[7%] cursor-pointer ${show('/serveces') }`}
+        <div  className={`bg-blue-100 text-center list-none rounded-[7%] cursor-pointer w-[350px]  ${show('/serveces') }`}
           onClick={ ()=>navigate('/Services')}
         >
-          <img src='./support.jpg'  className='w-[350px] h-[320px] p-4 ] rounded-[17%]'/>
+          <img src='./support.jpg'  className=' p-4  rounded-[17%]  w-[350px] m-auto'/>
           <li className='text-[22px] mt-4 pb-12'>Cars for <span className='font-semibold'>services</span></li>
         </div>
-        <div  className={`bg-blue-100 text-center list-none rounded-[7%] cursor-pointer  ${show('/Support') }`}
+        <div  className={`bg-blue-100 text-center list-none rounded-[7%] cursor-pointer w-[350px]   ${show('/Support') }`}
             onClick={ ()=>navigate('/Support')}
         >
-          <img src='./service.webp'  className='w-[350px] h-[320px] p-4 ] rounded-[17%]'/>
+          <img src='./service.webp'  className='w-[350px]  p-4 ] rounded-[17%] m-auto'/>
           <li className='text-[22px] mt-4 pb-12'>Cars for <span className='font-semibold'>Support</span></li>
         </div>
       </div>
-      <div className='flex justify-center pb-10 space-x-10 px-6 list-none mt-12 h-auto flex-wrap'>
-        <div className=' text-center w-[450px] h-[450px] relative hover:shadow-lg'>
+      <div className='wrap-flex md:flex xm:ml-[30px] sm:ml-[170px] pm:ml-[100px] md:ml-[2px] justify-center pb-10 xm:space-x-0  md:space-x-10  px-8 list-none mt-12 h-auto xm:text-center'>
+        <div className=' border-2 text-center xm:w-[300px] xm:h-[350px]   w-[400px] h-[400px] relative hover:shadow-lg'>
           <img src='https://luxorides.com/assets/images/bmw-logo-for-luxorides-512px-1x1.webp'/>
-          <li className='text-[25px]  absolute top-[80%] left-[30%]'>Rent an <span className='font-semibold'>BMW</span></li>
+          <li className='text-[25px]  absolute xm:top-[70%] md:top-[50%] lg:top-[80%] left-[30%]'>Rent an <span className='font-semibold'>BMW</span></li>
         </div>
-        <div className=' text-center  w-[450px] h-[450px] relative hover:shadow-lg'>
+        <div className='border-2  text-center xm:w-[300px] xm:h-[350px]  w-[400px] h-[400px] relative hover:shadow-lg'>
           <img src='http://car-logos.net/wp-content/uploads/2018/09/jaguar-logo.jpg'
           className=''/>
-          <li className='text-[25px]  absolute top-[80%] left-[30%]'>Rent an <span className='font-semibold'>jaguar</span></li>
+          <li className='text-[25px]  absolute xm:top-[50%] lg:top-[80%] left-[30%]'>Rent an <span className='font-semibold'>jaguar</span></li>
         </div>
-        <div className=' text-center  w-[450px] h-[450px] relative hover:shadow-lg'>
+        <div className='border-2 text-center xm:w-[300px] xm:h-[350px]  w-[400px] h-[400px] relative hover:shadow-lg'>
           <img src='./audi2.jpg'/>
-          <li className='text-[25px]  absolute top-[80%] left-[30%]'>Rent an <span className='font-semibold'>Audi</span></li>
+          <li className='text-[25px]  absolute xm:top-[50%] lg:top-[80%] left-[30%]'>Rent an <span className='font-semibold'>Audi</span></li>
         </div>
-        <div className=' text-center  w-[450px] h-[450px] relative hover:shadow-lg'>
+        <div className='border-2 text-center xm:w-[300px] xm:h-[350px] w-[400px] h-[400px] relative hover:shadow-lg'>
           <img src='./marcedes.jpg' className=''/>
-          <li className='text-[25px]  absolute top-[80%] left-[10%]'>Rent an <span className='font-semibold'>Mercedes-Benz</span></li>
+          <li className='text-[25px]  absolute xm:top-[50%] lg:top-[80%] left-[10%]'>Rent an <span className='font-semibold'>Mercedes-Benz</span></li>
         </div>
 
 
@@ -204,7 +181,7 @@ export default function Home() {
         <h1 className='text-[80px]'>How Choose Us</h1>
         <li className=' text-[27px]'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, ipsam!</li>
       </div>
-      <div className='flex-wrap flex justify-center space-x-[200px] lg:space-x-[200px] xm:space-x-[2px] xm:space-y-2 mt-10 list-none pb-[70px]'>
+      <div className=' lg:flex justify-center space-x-[200px] lg:space-x-[200px] xm:space-x-[2px] xm:space-y-2 mt-10 list-none pb-[70px]'>
         <div className=''>
           <h1 className='text-center  text-[80px] text-[#c1c1c1]'>01,</h1>
           <li className='text-center  text-[27px]'>Lorem ipsum dolor  <span className='font-semibold'>sit amet</span><br></br>
@@ -231,7 +208,7 @@ export default function Home() {
        <p className='mt-10 text-[30px] text-gray-500'>Lorem ipsum dolor sit amet.</p>
        <p className=' text-[30px]  text-gray-500'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, minus?</p>
        <p className='text-[30px]  text-gray-500'>Lorem ipsum dolor sit amet <span className='text-green-400'>consectetur </span>adipisicing elit.</p>
-    <div className='flex justify-center mt-[50px] w-full space-x-4  md:items-center'>
+    <div className='flex justify-center mt-[50px] w-full space-x-4 xm:space-x-0 lg:space-x-4  md:items-center '>
         <div className='border-4 w-[100px] h-[100px] rounded-[50%] border-black text-[50px] text-center'>
           1
       
@@ -300,24 +277,24 @@ export default function Home() {
         
       </div>
       <div>
-      <div className='text-center lg:space-x-8 xm:space-x-0  mt-[100px] mb-10 xm:space-y-4'>
-        <button className={`bg-[#b1a374] hover:bg-blue-400 w-[400px] h-16 rounded-full text-white text-[20px] ${show('/Brands') }`}
+      <div className='text-center lg:space-x-8 xm:space-x-0 sm:space-x-4 mt-[100px] mb-10 xm:space-y-4'>
+        <button className={`bg-[#b1a374] hover:bg-blue-400 xm:w-[300px] md:w-[400px] w-[400px] h-16 rounded-full text-white text-[20px] ${show('/Brands') }`}
                          onClick={ ()=>navigate('/Brands')}
         >Explore Cars by Brands </button>
-        <button className={`bg-[#b1a374]  hover:bg-blue-400 w-[400px] h-16 rounded-full text-white text-[20px]  ${show('/Categories')}`}
+        <button className={`bg-[#b1a374]  hover:bg-blue-400 xm:w-[300px] md:w-[400px] w-[400px] h-16 rounded-full text-white text-[20px]  ${show('/Categories')}`}
          onClick={ ()=>navigate('/Categories')}
         >Explore Cars by Categories</button>
        
 
       </div>
-      <div className='text-center space-x-8 xm:space-x-0 lg:space-x-8 pb-10 xm:space-y-4'>
-      <button className={`bg-[#b1a374]  hover:bg-blue-400 w-[400px] h-16 rounded-full text-white text-[20px]  ${show('/Services')}`}
+      <div className='text-center space-x-8 xm:space-x-2 sm:space-x-4 lg:space-x-8 pb-10 xm:space-y-4'>
+      <button className={`bg-[#b1a374]  hover:bg-blue-400 xm:w-[300px] md:w-[400px] w-[400px] h-16 rounded-full text-white text-[20px]  ${show('/Services')}`}
       onClick={ ()=>navigate('/Services')}
       >Explore by service</button>
-        <button className={`bg-[#b1a374]  hover:bg-blue-400 w-[400px] h-16 rounded-full text-white text-[20px]  ${show('/View')}`}
+        <button className={`bg-[#b1a374]  hover:bg-blue-400 xm:w-[300px] md:w-[400px] w-[400px] h-16 rounded-full text-white text-[20px]  ${show('/View')}`}
         onClick={ ()=>navigate('/view')}
         >One-View</button>
-        <button className={`bg-[#b1a374]  hover:bg-blue-400 w-[400px] h-16 rounded-full text-white text-[20px]   ${show('/Contact')}`}
+        <button className={`bg-[#b1a374]  hover:bg-blue-400 xm:w-[300px] md:w-[400px] w-[400px] h-16 rounded-full text-white text-[20px]   ${show('/Contact')}`}
        onClick={ ()=>navigate('/Contact')}
        >Contact Us</button>
       </div>
@@ -330,17 +307,17 @@ export default function Home() {
       </div>
 
 
-    <div className='mr-[50px] relative m-auto'>
+    <div className='w-full h-[700px] relative  '>
       <div style={{backgroundImage: `url(${slide[Currentstate].url}) `}}
-       className='xm:ml-[10%] sm:ml-[10%] md:ml-[30%] lg:ml-[300px] xm:w-[%] xl:ml-[400px] 2xl:ml-[700px] lg:h-[400px] w-[400px] h-[400px] ml-[300px] mt-12 items-center  rounded-full bg-center bg-cover duration-500 ]' > <h1>{slide[Currentstate]?.title}</h1></div>
+       className='w-full h-full bg-center bg-cover duration-500' > <h1>{slide[Currentstate]?.title}</h1></div>
       
 
     
-    <div className='xm:ml-[15%] absolute top-[30%] translate-x-0 translate-y-[-50%] left-5 rounded-full p-2 text-white bg-black cursor-pointer'>
+    <div className='absolute top-[50%] translate-x-0 translate-y-[-50%] left-5 rounded-full p-2 text-white bg-black cursor-pointer'>
     <BsChevronLeft onClick={prevslide} size={30} />
       
     </div>
-    <div className='xm:ml-[40%] absolute top-[30%] translate-x-0 translate-y-[%] right-5 rounded-full p-2 text-white bg-black cursor-pointer'>
+    <div className='absolute top-[47%] translate-x-0 translate-y-[-0%] right-5 rounded-full p-2 text-white bg-black cursor-pointer'>
       <BsChevronRight onClick={nextslide} size={30}/>
       
     </div>
