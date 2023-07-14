@@ -8,7 +8,7 @@ export default function Home() {
       <div className='relative'>
         <img src='./Explore.jpg' className='w-full h-[860px]'/>
         <div className='absolute top-[40%] left-[40%] right-0 bottom-0 text-white'>
-         <p className='text-[80px] font-[700]'>Explore <span className='text-[60px] font-[200]'>Car</span></p>
+         <p className='lg:text-[80px] xm:text-[40px] font-[700]'>Explore <span className='lg:text-[60px] xm:text-[40px] font-[200]'>Car</span></p>
 
         </div>
       </div>
@@ -17,27 +17,27 @@ export default function Home() {
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta </p>
           <p>Lorem ipsum dolor sit amet.</p>
         </div>
-      <div className='text-center space-x-8'>
+      <div className='text-center md:space-x-8  xm:space-x-0 space-y-2'>
         <button className='bg-[#b1a374!important;] w-[350px] h-16 rounded-full text-white text-[20px]'>Rent Convertibles</button>
         <button className='bg-[#b1a374!important;] w-[350px] h-16 rounded-full text-white text-[20px]'>Rent Convertibles</button>
         <button className='bg-[#b1a374!important;] w-[350px] h-16 rounded-full text-white text-[20px]'>Rent Convertibles</button>
 
       </div>
-      <div className='text-center mt-4 space-x-8'>
-        <button className='bg-[#b1a374!important;] w-[400px] h-16 rounded-full text-white text-[20px]'>Rent Premimum Luxuries</button>
-        <button className='bg-[#b1a374!important;] w-[400px] h-16 rounded-full text-white text-[20px]'>Rent Sports/muscle Cars </button>
+      <div className='text-center mt-4  md:space-x-8  xm:space-x-0 space-y-2'>
+        <button className='bg-[#b1a374!important;]  md:w-[400px] xm:w-[300px] h-16 rounded-full text-white text-[20px]'>Rent Premimum Luxuries</button>
+        <button className='bg-[#b1a374!important;]  md:w-[400px] xm:w-[300px] h-16 rounded-full text-white text-[20px]'>Rent Sports/muscle Cars </button>
         
 
       </div>
-      <div className='text-center space-x-8 mt-6'>
+      <div className='text-center  md:space-x-8  xm:space-x-0 space-y-2 mt-6'>
         <button className='bg-[#b1a374!important;] w-[350px] h-16 rounded-full text-white text-[20px]'>Rent Convertibles</button>
         <button className='bg-[#b1a374!important;] w-[350px] h-16 rounded-full text-white text-[20px]'>Rent Convertibles</button>
         <button className='bg-[#b1a374!important;] w-[350px] h-16 rounded-full text-white text-[20px]'>Rent Convertibles</button>
 
       </div>
-      <div className='text-center mt-4 space-x-8'>
-        <button className='bg-black w-[400px] h-16 rounded-full text-white text-[20px]'>Rent Premimum Luxuries</button>
-        <button className='bg-black w-[400px] h-16 rounded-full text-white text-[20px]'>Rent Sports/muscle Cars </button>
+      <div className='text-center mt-4  md:space-x-8  xm:space-x-0 space-y-2'>
+        <button className='bg-black md:w-[400px] xm:w-[300px] h-16 rounded-full text-white text-[20px]'>Rent Premimum Luxuries</button>
+        <button className='bg-black  md:w-[400px] xm:w-[300px] h-16 rounded-full text-white text-[20px]'>Rent Sports/muscle Cars </button>
       </div>
       
 
@@ -53,23 +53,23 @@ export default function Home() {
           usto vel facere placeat optio nesciunt nobis itaque ut perspiciatis.<br></br>
           usto vel facere placeat optio nesciunt nobis itaque ut perspiciatis.<br></br>
           usto vel facere placeat optio nesciunt nobis itaque ut perspiciatis.<br></br>
-          <p className='text-start ml-[450px]'> Luxury Car there is no allow</p>
+          <p className='text-center'> Luxury Car there is no allow</p>
         </p>
         <p className='text-[60px] font-[100] mt-20'>Renting a Luxury Cars</p>
         <p  className='text-[30px] font-[200] mt-10'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dicta,<br></br> 
           usto vel facere placeat optio nesciunt nobis itaque ut perspiciatis.<br></br>
           usto vel facere placeat optio nesciunt nobis itaque ut perspiciatis.<br></br>
-          <p className='text-start ml-[450px] mb-16'> Luxury Cars</p>
+          <p className='text-center  mb-16'> Luxury Cars</p>
         </p>
       </div>
-      <div className='w-full h-[800px] border-4 bg-gray-200  relative'>
+      <div className='w-full h-[800px] h-auto border-4 bg-gray-200  relative'>
       <div className='w-full h-full m-auto text-center'>
        <h1 className='text-[80px]'>How to Work it</h1>
        <p className='mt-10 text-[30px] text-gray-500'>Lorem ipsum dolor sit amet.</p>
        <p className=' text-[30px]  text-gray-500'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, minus?</p>
        <p className='text-[30px]  text-gray-500'>Lorem ipsum dolor sit amet <span className='text-green-400'>consectetur </span>adipisicing elit.</p>
 
-       <div className='flex justify-center mt-[50px] w-full space-x-4'>
+       <div className='flex justify-center mt-[50px] w-full space-x-4  xm:space-x-0 lg:space-x-4  md:items-center '>
         <div className='border-4 w-[100px] h-[100px] rounded-[50%] border-black text-[50px] text-center'>
           1
       
@@ -86,12 +86,11 @@ export default function Home() {
         <div className='border-4 border-black rounded-[50%] text-[50px] w-[100px] h-[100px] text-[20px] text-center p-[5px]'>3</div>
 
       </div>
-      <div className='flex justify-between  px-[140px] mt-[30px]'>
+      <div className='flex-wrap flex justify-center  px-[140px] mt-[30px] space-x-16 xm:space-x-0 md:space-x-6 lg:space-x-16'>
       <div className=''>
         <h1 className='text-[40px]'>Choose your Ride</h1>
         <p className='text-[20px]'>Lorem ipsum dolor sit amet.</p>
-        <p p className='text-[20px]'>Your Requairments</p>
-        <p p className='text-[20px]'>Lorem ipsum dolor sit amet.</p>
+        
         <p className=' text-[20px] space-x-4'>Explore <button className='font-semibold'>Cars/</button><button  className='font-semibold'>
           Brands/</button><button  className='font-semibold'>Services</button></p>
       

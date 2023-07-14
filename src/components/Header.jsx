@@ -14,22 +14,15 @@ export default function Header() {
       return true
     }
 
-    function show(){
-      var x=document.getElementById("btn");
-      if (x.style.display=="block") {
-        x.style.display="none"
-      }
-      else{
-        x.style.display="block"
-      }
+    
     }
+   
 
 
 
 
 
-  }
-
+  
   
 
 
@@ -45,7 +38,7 @@ export default function Header() {
                />
             </div>
             <div className=' xm:hidden lg:flex flex-wrap flex  ml-[200px] font-semibold lg:w-[40%] xl:w-[40%] lg:ml-[60px] xl:ml-[60px]'>
-                <ul id='btn' className=' flex  flex-wrap   space-x-6 text-[25px] text-[#879a9f] hover:text-[#e6c65f]  lg:text-[20px] xl:text-[20px] 2xl:text-[25px]'>
+                <ul  className=' flex  flex-wrap   space-x-6 text-[25px] text-[#879a9f] hover:text-[#e6c65f]  lg:text-[20px] xl:text-[20px] 2xl:text-[25px]'>
                   <div>
                     
                   </div>
@@ -147,7 +140,7 @@ export default function Header() {
                
             </div>
             <div className='mr-1 text-[62px] text-white lg:hidden sm:block  md:ml-[450px] xm:ml-[250px] font-semibold'>
-              <IoMdMenu onClick={show()} className='' ></IoMdMenu>
+              <IoMdMenu className='' ></IoMdMenu>
             </div>
         </header>
 

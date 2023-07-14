@@ -8,15 +8,15 @@ export default function Services() {
     <div className='relative'>
         <img src='./service.webp' className='w-full h-[760px]'/>
         <div className='absolute top-[26%] left-[0%] right-0 bottom-0 text-white w-full'>
-         <p className='text-[90px] font-[700] text-center'>Our Servicese</p>
+         <p className='sm:text-[70px] xm:text-[50px] md:text-[90px] font-[700] text-center'>Our Servicese</p>
          <p className='text-[30px] text-center'>Lorem ipsum dolor, sit amet consectetur<br></br>
          adipisicing elit. Temporibus<span className=' font-[600] font-semibold text-[40px] text-black'>Luxury Cars ipsum</span>.
          </p>
-         <BsArrowDownCircle className='ml-[800px] mt-[200px] animate-bounce text-[80px] text-center'></BsArrowDownCircle>
+         <BsArrowDownCircle className=' xm:ml-[220px] sm:ml-[220px] md:ml-[400px] lg:ml-[600px] xl:ml-[800px] sm:mt-[200px] xm:mt-[80px] animate-bounce text-[80px] text-center'></BsArrowDownCircle>
 
         </div>
       </div>
-      <div className=' flex justify-center space-x-16 mt-[200px]'>
+      <div className=' lg:flex justify-center lg:space-x-16 xm:space-x-0 mt-[200px]'>
         <div className='group relative w-[500px] h-[700px] text-center  hover:shadow-xl'>
         <img src='wedding.jpg'  className='hover:blur-sm ml-[0px]'
         />
